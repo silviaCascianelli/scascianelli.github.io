@@ -781,15 +781,15 @@ body.dark .work-links img {
 
 .article-boxes {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   /*gap: 3.5%;*/
-  margin-block-start: var(--gutter-x-large);
+  margin-block-start: var(--gutter-x-small);
 }
 
 .article-box {
-  flex-basis: 31%;
+  flex-basis: 15%;
   border: 1px solid var(--border);
-  padding: var(--gutter-small) var(--gutter-small);
+  padding: var(--gutter-x-small) var(--gutter-x-small);
   border-radius: var(--gutter-nano);
   background-color: var(--bg-color-secondary);
 }
@@ -802,7 +802,7 @@ body.dark .work-links img {
 
 .article-text {
   font-size: var(--text-small);
-  margin-block: var(--gutter-x-small);
+  margin-block: 0px;
 }
 
 .article-info {
