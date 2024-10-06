@@ -322,7 +322,7 @@ body.light .btn-cta:focus {
   height: 1px;
   margin-block-start: var(--gutter-nano);
   position: absolute;
-  bottom: -1px;
+  bottom: 10px;
   left: 0;
   transition: 300ms;
 }
@@ -426,8 +426,8 @@ main {
   min-block-size: 100vh;
   position: fixed;
   width: 100%;
-  background-color: #ff5e99;
-  background-image: var(--gradient-brand);
+  background-color: #071811;
+  /*background-image: var(--gradient-brand);*/
   transition: 450ms var(--easing);
   z-index: 3;
 }
@@ -487,8 +487,29 @@ body.dark .header {
 
 body.light .header {
   background-image: linear-gradient(#ffffffa2, #ffffffe6),
-    url("assets/images/hero-bg-light.webp");
+    url("assets/images/light-bg.jpg");
 }
+
+.subheader-text {
+  font-size: var(--text-large);
+  font-weight: 400;
+  max-inline-size: 745px;
+  margin-block-start: var(--gutter-micro);
+  margin-block-end: var(--gutter-medium);
+}
+
+@media (max-width: 1200px) {
+  .subheader-text {
+    max-inline-size: 685px;
+  }
+}
+
+@media (max-width: 845px) {
+  .subheader-text {
+    max-inline-size: 585px;
+  }
+}
+
 
 .header-textbox {
   position: absolute;
@@ -648,13 +669,13 @@ body.light .logo {
   }
 }
 
-.work-img,
+/*.work-img,
 .work-textbox {
   flex-basis: 49%;
-}
+}*/
 
 .work-img {
-  max-inline-size: 785px;
+  max-inline-size: 445px;
   transition: 0.6s all;
 }
 
@@ -663,7 +684,7 @@ body.light .work-img {
 }
 
 .work-textbox {
-  max-inline-size: 445px;
+  max-inline-size: 785px;
 }
 
 @media (max-width: 885px) {
@@ -916,6 +937,7 @@ body.dark .work-links img {
 .testimonial-text {
   font-size: var(--text-small);
   margin-block-end: var(--gutter-x-small);
+  margin-top: 20px;
 }
 
 .testimonial-author {
@@ -935,11 +957,38 @@ body.dark .work-links img {
 }
 
 .testimonial-author > img {
-  block-size: 52px;
-  inline-size: 52px;
+  block-size: 80px;
+  inline-size: 80px;
   border-radius: 50%;
   background-color: var(--bg-color-secondary);
 }
+
+.testimonials-links {
+  display: flex;
+  gap: var(--gutter-small);
+  list-style-type: none;
+}
+
+@media (max-width: 1040px) {
+  .testimonials-links {
+    gap: var(--gutter-micro);
+  }
+}
+
+.testimonials-link img {
+  block-size: 52px;
+  inline-size: 52px;
+}
+
+.testimonials-link a {
+  opacity: 0.875;
+  transition: 225ms ease-in opacity;
+}
+
+.testimonials-link a:hover {
+  opacity: 1;
+}
+
 
 /* --------------------------------- */
 /* ----- Skills -----*/
@@ -987,6 +1036,81 @@ body.dark .work-links img {
     block-size: 55px;
     inline-size: 55px;
   }
+}
+
+
+/* --------------------------------- */
+/* ----- extlinks -----*/
+/* --------------------------------- */
+
+.extlinks-imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--gutter-x-large);
+  padding-block-start: var(--gutter-x-large);
+}
+
+.extlinks-img {
+  block-size: 135px;
+  inline-size: 135px;
+}
+
+@media (max-width: 1100px) {
+  .extlinks-img {
+    block-size: 100px;
+    inline-size: 100px;
+  }
+}
+
+@media (max-width: 810px) {
+  .extlinks-img {
+    block-size: 85px;
+    inline-size: 85px;
+  }
+}
+
+@media (max-width: 675px) {
+  .extlinks-imgs {
+    gap: var(--gutter-large);
+  }
+  .extlinks-img {
+    block-size: 70px;
+    inline-size: 70px;
+  }
+}
+
+@media (max-width: 340px) {
+  .extlinks-img {
+    block-size: 55px;
+    inline-size: 55px;
+  }
+}
+
+.extlinks-links {
+  display: flex;
+  gap: var(--gutter-small);
+  list-style-type: none;
+}
+
+@media (max-width: 1040px) {
+  .extlinks-links {
+    gap: var(--gutter-micro);
+  }
+}
+
+.extlinks-link img {
+  block-size: 135px;
+  inline-size: 135px;
+}
+
+.extlinks-link a {
+  opacity: 0.875;
+  transition: 225ms ease-in opacity;
+}
+
+.extlinks-link a:hover {
+  opacity: 1;
 }
 
 /* --------------------------------- */

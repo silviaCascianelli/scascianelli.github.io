@@ -80,9 +80,10 @@
       <nav class="nav hidden">
         <ol class="nav-items">
           <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#work">Projects</a></li>
-          <li class="nav-item"><a href="#blog">Latest News</a></li>
-          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item"><a href="#work">Recent Projects</a></li>
+          <li class="nav-item"><a href="#blog">Mentorees</a></li>
+          <li class="nav-item"><a href="#blog">Updates</a></li>
+          <li class="nav-item"><a href="#skills">External Links</a></li>
           <li class="nav-item">
             <a href="#contact" data-focused="last-focused">Contact</a>
           </li>
@@ -98,203 +99,103 @@
 
           <!-- Add a small introductory paragraph about yourself -->
           <p class="header-text">
-            An AI Researcher and aspiring AI Researchers and Engineers' mentor
+            An AI Researcher and aspiring AI Researchers' mentor
           </p>
 
           <div class="header-btns">
             <a href="#contact" class="btn btn-cta">Reach out</a>
-            <a href="#work" class="btn btn-secondary">Explore my work</a>
+            <a href="#work" class="btn btn-secondary">Explore</a>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="client">
-        <div class="container">
-          <h2 class="h2">Trusted by</h2>
-          <div class="logos">
-            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/stripe.svg"
-                alt="Ideacraft"
-                class="logo hide to-top"
-              />
-
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/datastax.svg"
-                alt="Golden grid"
-                class="logo"
-              />
-
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/coke.svg"
-                alt="Theia"
-                class="logo hide to-bottom"
-              />
-            </div>
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/gm.svg"
-                alt="General motors"
-                class="logo hide to-top"
-              />
-
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/shares.svg"
-                alt="Chippy"
-                class="logo"
-              />
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/shopify.svg"
-                alt="Shopify"
-                class="logo hide to-bottom"
-              />
-            </div>
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/agency-elevation.svg"
-                alt="Agency elevation"
-                class="logo hide to-top"
-              /><img
-                loading="lazy"
-                src="assets/images/trusted-by/gitlab.svg"
-                alt="Ron jones"
-                class="logo"
-              /><img
-                loading="lazy"
-                src="assets/images/trusted-by/duolingo.svg"
-                alt="Mighty furniture's"
-                class="logo hide to-bottom"
-              />
-            </div>
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/coyote.svg"
-                alt="Bulls eye"
-                class="logo hide to-top"
-              />
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/astrato.svg"
-                alt="Chippy"
-                class="logo"
-              />
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/mercado.svg"
-                alt="Fastlane"
-                class="logo hide to-bottom"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="work">
         <div class="container">
-          <h2 class="h2" id="work">Selected Work</h2>
+          <h2 class="h2" id="work">Recent Projects</h2>
           <div class="work-boxes">
+
             <div class="work-box">
               <div class="work-textbox">
                 <!-- Add your project title here -->
-                <h3 class="h3">portfolio template</h3>
+                <h3 class="h3">Image Generation</h3>
                 <!-- Add small description of your project  -->
                 <p class="work-text">
-                  A free to use, minimal and accessible portfolio template for
-                  developers.
+                  Efficient and lightwight generation of images with desired characteristiscs by adapting the inference time behavior of Diffusion Models.
                 </p>
-                <!-- Add technologies you used to build the project -->
                 <ol class="work-technologies">
-                  <li>React</li>
-                  <li>Gatsby</li>
-                  <li>SCSS</li>
-                  <li>MDX</li>
+                  <li>
+                    <a href="https://arxiv.org/abs/2408.15660" target="_blank" rel="noopener" class="link">
+                      Merging and Splitting Diffusion Paths for Semantically Coherent Panoramas</a> 
+                    Fabio Quattrini, Vittorio Pippi, Silvia Cascianelli, Rita Cucchiara 
+                  </li>
+                  <li>
+                    <a href="https://arxiv.org/abs/2408.14826" target="_blank" rel="noopener" class="link">
+                      Alfie: Democratising RGBA Image Generation With No $$$</a> 
+                    Fabio Quattrini, Vittorio Pippi, Silvia Cascianelli, Rita Cucchiara 
+                    </li>
                 </ol>
-
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://github.com/devsyedmohsin" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/devsyedmohsin"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
+                <!--<a 
+                href="https://github.com/devsyedmohsin" target="_blank" rel="noopener" title="Source code" class="work-links">
+                <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy"/>
+                </a>-->                
               </div>
-
          <!-- Update img src and alt attribute  -->
-
               <picture class="work-img">
                 <img
                   loading="lazy"
-                  src="assets/images/work/portfolio-template.webp"
+                  src="assets/images/work/alfie.jpg"
                   alt="agency elevation"
                 />
               </picture>
             </div>
+
             <div class="work-box">
               <div class="work-textbox">
                 <!-- Add your project title here -->
-                <h3 class="h3">agencyelevation.com</h3>
+                <h3 class="h3">Handwriting Imitation</h3>
                 <!-- Add small description of your project  -->
-
-                <p class="work-text">Website for Agency Elevation.</p>
+                <p class="work-text">
+                  Efficient and lightwight generation of images with desired characteristiscs by adapting the inference time behavior of Diffusion Models.
+                </p>
                 <ol class="work-technologies">
-                  <li>React</li>
-                  <li>Gatsby</li>
-                  <li>Material UI</li>
+                  <li>
+                    <a href="https://arxiv.org/abs/2408.15660" target="_blank" rel="noopener" class="link">
+                      Merging and Splitting Diffusion Paths for Semantically Coherent Panoramas</a> 
+                      Bram Vanherle, Vittorio Pippi, Silvia Cascianelli, Nick Michiels, Frank Von Reet, Rita Cucchiara 
+                  </li>
+                  <li>
+                    <a href="https://arxiv.org/abs/2408.15660" target="_blank" rel="noopener" class="link">
+                      Merging and Splitting Diffusion Paths for Semantically Coherent Panoramas</a> 
+                      Vittorio Pippi, Silvia Cascianelli, Rita Cucchiara 
+                  </li>
+                  <li>
+                    <a href="https://arxiv.org/abs/2408.14826" target="_blank" rel="noopener" class="link">
+                      Alfie: Democratising RGBA Image Generation With No $$$</a> 
+                      Vittorio Pippi, Fabio Quattrini, Silvia Cascianelli, Rita Cucchiara 
+                  </li>
+                  <li>
+                    <a href="https://arxiv.org/abs/2408.15660" target="_blank" rel="noopener" class="link">
+                      Merging and Splitting Diffusion Paths for Semantically Coherent Panoramas</a> 
+                      Vittorio Pippi, Silvia Cascianelli, Christopher Kermorvant, Rita Cucchiara 
+                  </li>
                 </ol>
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="#" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="http://github.com/devsyedmohsin"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
+                <!--<a 
+                href="https://github.com/devsyedmohsin" target="_blank" rel="noopener" title="Source code" class="work-links">
+                <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy"/>
+                </a>-->                
               </div>
          <!-- Update img src and alt attribute  -->
               <picture class="work-img">
                 <img
                   loading="lazy"
-                  src="assets/images/work/agency-elevation.webp"
-                  alt="portfolio template"
+                  src="assets/images/work/vatrpp.jpg"
+                  alt="agency elevation"
                 />
               </picture>
             </div>
+                
             <div class="work-box">
               <div class="work-textbox">
                 <!-- Add your project title here -->
@@ -344,11 +245,109 @@
 
       <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
 
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
+
+      <section>
+        <h2 class="h2">Mentorees</h2>
+        <!--<p class="header-text">
+          All the results of the last years have been possible mostly thanks to these amazing folks below (feel free to contact them)
+        </p>-->
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/vittorio.jpg"
+                  alt="Vittorio Pippi"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                    <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Vittorio Pippi</a>                 
+                    </h3>
+                  <p class="testimonial-author-job">PhD Student at UniMoRe</p>
+                </figcaption>
+              </figure>
+              <blockquote class="testimonial-text">
+                Vittorio is pursuing his PhD within the National PhD program in AI and now he's in internship at Amazon Research Berlin.
+                I'm his proud co-supervisor. He's grounded, generous, and sharp. I could watch him learning to apply this traits to research and show them properly.             
+              </blockquote>
+            </li>
+
+            <li class="testimonial">
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/fabio.jpg"
+                  alt="Fabio Quattrini"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                    <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Fabio Quattrini</a>                 
+                    </h3>
+                  <p class="testimonial-author-job">PhD Student at UniMoRe</p>
+                </figcaption>
+              </figure>
+              <blockquote class="testimonial-text">
+                Fabio is a PhD student of the ICT program at the University of Modena and Reggio Emilia, now in internship at Amazon Research Berlin.
+                I'm happy to be his advisor in this journey. He's creative, kind, and blunt. I'm seeing him gaining more and more control over his talent for research.             
+              </blockquote>
+            </li>
+
+            <li class="testimonial">
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/bram.jpg"
+                  alt="Bram Vanherle"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                    <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Bram Vanherle</a>                 
+                    </h3>
+                  <p class="testimonial-author-job">PhD Student at UHasselt</p>
+                </figcaption>
+              </figure>
+              <blockquote class="testimonial-text">
+                Bram just gained his PhD from the University of Hasselt and spent 5 months in internship at the University of Modena and Reggio Emilia, during which I had the pleasure of advising him.
+                He's concrete, easygoing, and solid. I enjoyed a lot working with him (also after his internship).             
+              </blockquote>
+            </li>
+
+            <li class="testimonial">
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/carmine.jpg"
+                  alt="Carminie Zaccagnino"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                    <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Carminie Zaccagnino</a>                 
+                    </h3>
+                  <p class="testimonial-author-job">MSc Student at UniMoRe</p>
+                </figcaption>
+              </figure>
+              <blockquote class="testimonial-text">
+                Carmine is about to obtain his MSc degree from the University of Modena and Reggio Emilia. I am working with him as his thesis co-tutor.
+                He's hardworking, active, and passionate. I'm more and more pleased with his capacity to pick up on each opportunity he's presented with.             
+              </blockquote>
+            </li>
+          </ol>
+        </div>
+      </section>
+
       <section class="article">
         <div class="container">
-          <h2 class="h2" id="blog">My Articles</h2>
+          <h2 class="h2" id="blog">Updates</h2>
           <div class="article-boxes">
-            <article class="article-box featured-article">
+            <!-- <article class="article-box featured-article">
               <div class="article-textbox">
                 <div>
                   <h3 class="h3">
@@ -377,225 +376,116 @@
                   loading="lazy"
                 />
               </picture>
-            </article>
+            </article> -->
+
             <article class="article-box">
               <div class="article-textbox">
                 <div>
-                  <h3 class="h4">JavaScript Default Function Parameters.</h3>
+                  <h3 class="h4">ECCV2024</h3>
                   <p class="article-text">
-                    In JavaScript when we call a function which expects some
-                    data to be passed in if you call that without passing
+                    I'm just back from ECCV2024 in Milan. Some seeds have been planted: stay tuned to see how it goes!
                   </p>
                 </div>
-                <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                      loading="lazy"
-                    />
-                    47
-                  </span>
-                </div>
               </div>
             </article>
+
             <article class="article-box">
               <div class="article-textbox">
                 <div>
-                  <h3 class="h4">
-                    Free Open-source portfolio template for developers ✨
-                  </h3>
+                  <h3 class="h4">AC @CVPR</h3>
                   <p class="article-text">
-                    A beautiful, minimal and accessible portfolio template for
-                    Developers which is completely free and Open Source.
+                    It's official: I'll have the honor to serve as an Area Chair at CVPR2025!
                   </p>
                 </div>
-                <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin/free-open-source-portfolio-template-for-developers-4g1d" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                      loading="lazy"
-                    />
-                    177
-                  </span>
-                </div>
               </div>
             </article>
+
             <article class="article-box">
               <div class="article-textbox">
                 <div>
-                  <h3 class="h4">HTML tips and tricks.</h3>
-                  <div class="article-text">
-                    In my very last article I shared some JavaScript tips and
-                    tricks In this article I will be covering HTML tips and
-                    tricks.
-                  </div>
-                </div>
-                <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      loading="lazy"
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                    />
-                    350
-                  </span>
+                  <h3 class="h4">AI4DH Workshop @ECCV2024</h3>
+                  <p class="article-text">
+                    The <a href="https://sites.google.com/view/ai4dh2024/organization?authuser=0" target="_blank" rel="noopener"> workshop on AI for Digital Humanities</a> 
+                    I co-organize has reached its third edition at this ECCV2025!
+                  </p>
                 </div>
               </div>
             </article>
+
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Flash seminar @Huawei</h3>
+                  <p class="article-text">
+                    Since I was in Amsterdam visiting some friends and museums, I took the chance to spend more time with such friend and go chatting with people of the 
+                    local Huawei Research Center about my research. I'm confident we gave eachother interesitng insights...
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Bram's Defense</h3>
+                  <p class="article-text">
+                    I had the pleasure to be a member of the jury for Bram Vanherle's PhD defense (and the chance to give a seminar at UHasselt the day before). 
+                    Congrats to him!
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">ICDAR2024</h3>
+                  <p class="article-text">
+                    I've concluded my summer with ICDAR2024 in Athens. That community feels like home each time!
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">ADAPDA Workshop @ICDAR2024</h3>
+                  <p class="article-text">
+                    The <a href="https://sites.google.com/view/ai4dh2024/organization?authuser=0" target="_blank" rel="noopener"> Automatically Domain-Adapted and Personalized Document Analysis workshop</a> 
+                    I co-organize has had a very weel-participated second edition at this ICDAR2024!
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            
+            
           </div>
         </div>
       </section>
 
-      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
-
-      <section class="skills">
+      <section class="extlinks">
         <div class="container">
-          <h2 class="h2" id="skills">My Toolkit</h2>
-          <div class="skills-imgs">
-                <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React">
+          <h2 class="h2" id="extlinks">External Links</h2>
+          <div class="extlinks-imgs">
+            <ol class="extlinks-link">
+              <a title="GitHub" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                ><img
+                  loading="lazy"
+                  src="assets/images/social-links/github.svg"
+                  alt="GitHub"
+              /></a>
+            </ol>
+                <img src="assets/images/skills/react.webp" alt="React" class="extlinks-img" loading="lazy" title="React">
                 <img src="assets/images/skills/svelte.webp" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
                  <img src="assets/images/skills/typescript.webp" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
                  <img src="assets/images/skills/a11y.webp" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
-                 <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
-                 <img src="assets/images/skills/next-js.webp" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
-                 <img src="assets/images/skills/graphql.webp" alt="Graph Ql" class="skills-img" loading="lazy" title="Graph QL">
-                 <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
-                 <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
-                 <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
             </figure>
           </div>
         </div>
       </section>
 
-      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
-
-      <section>
-        <h2 class="h2">Testimonials</h2>
-        <div class="container">
-          <ol class="testimonials">
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Working with Syed was a great experience. His drive for clean aesthetics and his open communication style helped us collaborate closely on the solution.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/rich-harris.png"
-                  alt="Rich Harris"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Harris Kareem</h3>
-                  <p class="testimonial-author-job">Developer @Outlets</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a fantastic UI/UX designer and developer with a keen sense for marketing, and lead generation. He's the only designer I know who also has a deep understanding for code and front-end development.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/frank-mcsherry.webp"
-                  alt="Andrew Mead"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">
-                   Andrew Mead
-                  </h3>
-                  <p class="testimonial-author-job">Chief Scientist @Logos
-                  </p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-             
-                Talented artist, experienced with various
-                media and can make any project you are working on look good. He is
-                easy to work with and is a self starter. I would work with Syed
-                again.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/brian-hirsh.png"
-                  alt="Brian Hirsh"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Brian Hirsh</h3>
-                  <p class="testimonial-author-job">Head @Zero-in</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a true professional with amazing talent. He is a creative
-                thinker, has his finder on the pulse of whats to come, and
-                absolutely one of the quickest and best problem solvers I have
-                ever met.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/adam.png"
-                  alt="Adam Argalye"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Adam Argalye</h3>
-                  <p class="testimonial-author-job">SWE @Google</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-               Syed is one of my favourite people to work with. He's my go-to colleague when trouble shooting any new technique or technology because she understands how to tackle unknown problems with gumption. 
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/val-head.png"
-                  alt="Val Head"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Val Head</h3>
-                  <p class="testimonial-author-job">CEO @Engines</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a talented artist. He is very experienced with various
-                media and can make any project you are working on look good. He is
-                easy to work with and is a self starter. I would work with Syed
-                again.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/tim-satterwhite.webp"
-                  alt="Gary Simon"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Gary Simon</h3>
-                  <p class="testimonial-author-job">A11y Advocate @W3C</p>
-                </figcaption>
-              </figure>
-            </li>
-          </ol>
-        </div>
-      </section>
 
       <section class="contact">
         <div class="container">
@@ -603,10 +493,10 @@
           <div class="contact-content">
             <div class="contact-textbox">
               <!-- Please comment this component if you're not available for hire -->
-              <strong href="#" class="hire-alert">
+              <!--<strong href="#" class="hire-alert">
                 <span class="indicator"></span>
                 Available for hire
-              </strong>
+              </strong>-->
               <p class="contact-text">
                 As a software engineer, I construct web interfaces and design
                 systems with a special love for accessibility and the
@@ -655,7 +545,7 @@
       <div class="container">
         <div class="footer-content">
           <!-- Update href and src attributes -->
-          <nav>
+          <!-- <nav>
             <ol class="footer-links">
               <li class="footer-link">
                 <a title="GitHub" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
@@ -690,10 +580,7 @@
                 /></a>
               </li>
             </ol>
-          </nav>
-          <p class="footer-text">
-            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Silvia Cascianelli.</a>
-          </p>
+          </nav> -->
           <label class="theme-switch" for="theme-switch">
             <span>Dark Theme</span>
             <input type="checkbox" id="theme-switch" role="switch"/>
