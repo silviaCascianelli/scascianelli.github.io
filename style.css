@@ -44,7 +44,7 @@
   --gutter-huge: 12rem;
 
   --scroll-padding: 4.375rem;
-  --radius: 85px;
+  --radius: 25px;
 }
 
 body.dark {
@@ -61,7 +61,7 @@ body.dark {
 
 body.light {
   --bg-color-primary: #f1eaa8;
-  --bg-color-secondary: #ffffff;
+  --bg-color-secondary: #edeacf;
   --important: #000;
   --sub: #111;
   --body: #585b63;
@@ -781,14 +781,14 @@ body.dark .work-links img {
 .article-boxes {
   display: flex;
   flex-flow: row wrap;
-  gap: 3.5%;
+  /*gap: 3.5%;*/
   margin-block-start: var(--gutter-x-large);
 }
 
 .article-box {
   flex-basis: 31%;
   border: 1px solid var(--border);
-  padding: var(--gutter-medium) var(--gutter-small);
+  padding: var(--gutter-small) var(--gutter-small);
   border-radius: var(--gutter-nano);
   background-color: var(--bg-color-secondary);
 }
@@ -905,7 +905,7 @@ body.dark .work-links img {
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   margin-block-start: var(--gutter-x-large);
   list-style-type: none;
@@ -1131,12 +1131,14 @@ body.dark .work-links img {
     flex-direction: column-reverse;
     max-inline-size: 845px;
     margin-inline: auto;
+    background-color: var(--bg-color-secondary);
   }
 }
 
 .contact-textbox,
 .contact-form {
   padding: var(--gutter-large) var(--gutter-small);
+  background-color: var(--bg-color-secondary);
 }
 
 .hire-alert {
