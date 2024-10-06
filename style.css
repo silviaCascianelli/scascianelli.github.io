@@ -48,8 +48,8 @@
 }
 
 body.dark {
-  --bg-color-primary: #0c0a0a;
-  --bg-color-secondary: #161211;
+  --bg-color-primary: #0a0c0a;
+  --bg-color-secondary: #111615;
   --important: #fff;
   --sub: #c3c3c3;
   --body: #989898;
@@ -60,7 +60,7 @@ body.dark {
 }
 
 body.light {
-  --bg-color-primary: #fbfbfb;
+  --bg-color-primary: #f1eaa8;
   --bg-color-secondary: #ffffff;
   --important: #000;
   --sub: #111;
@@ -1119,7 +1119,7 @@ body.dark .work-links img {
 
 .contact-content {
   display: grid;
-  grid-template-columns: minmax(245px, 35%) 1fr;
+  /*grid-template-columns: minmax(245px, 35%) 1fr;*/
   margin-block: var(--gutter-x-large);
   border: 1px solid var(--border);
   border-radius: var(--gutter-nano);
